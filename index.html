@@ -24,6 +24,7 @@
             background-attachment: fixed;
             min-height: 100vh;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             padding: 16px;
@@ -140,7 +141,6 @@
             border: 1px solid rgba(255, 255, 255, 0.2);
             animation: slideUp 0.5s ease-out;
             transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-            margin: 0 auto;
         }
 
         @media (min-width: 901px) {
@@ -869,50 +869,13 @@
             }
         }
 
-        @media (min-width: 901px) {
-            .compliance-footer {
-                font-size: 11px;
-                padding: 24px 20px;
-                margin: 32px auto 0;
-            }
-
-            .identity-tag {
-                font-size: 13px;
-                margin-bottom: 20px;
-                padding: 12px 0;
-            }
-        }
+        @media (max-width: 900px) {
             .container {
                 border-radius: 16px;
-                transition: none;
-            }
-
-            .layout-wrapper {
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                gap: 0;
             }
 
             .split-left {
                 display: none;
-            }
-
-            button:active {
-                transform: translateY(-1px);
-            }
-
-            body {
-                background: linear-gradient(
-                    120deg,
-                    rgba(0, 0, 0, 0.58),
-                    rgba(0, 0, 0, 0.45)
-                ),
-                url('assets/purchase-hero.png');
-            }
-
-            .container {
-                border-radius: 16px;
             }
 
             .content {
@@ -981,6 +944,29 @@
                 padding: 20px;
                 border-radius: 10px;
             }
+
+            body {
+                background: linear-gradient(
+                    120deg,
+                    rgba(0, 0, 0, 0.58),
+                    rgba(0, 0, 0, 0.45)
+                ),
+                url('assets/purchase-hero.png');
+            }
+        }
+
+        @media (min-width: 901px) {
+            .compliance-footer {
+                font-size: 11px;
+                padding: 24px 20px;
+                margin: 32px auto 0;
+            }
+
+            .identity-tag {
+                font-size: 13px;
+                margin-bottom: 20px;
+                padding: 12px 0;
+            }
         }
 
         @media (min-width: 901px) {
@@ -1041,28 +1027,6 @@
                     120deg,
                     rgba(0, 0, 0, 0.48),
                     rgba(0, 0, 0, 0.32)
-                ),
-                url('assets/purchase-hero.png');
-            }
-        }
-
-        @media (min-width: 601px) and (max-width: 900px) {
-            .layout-wrapper {
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                gap: 0;
-            }
-
-            .split-left {
-                display: none;
-            }
-
-            body {
-                background: linear-gradient(
-                    120deg,
-                    rgba(0, 0, 0, 0.58),
-                    rgba(0, 0, 0, 0.45)
                 ),
                 url('assets/purchase-hero.png');
             }
