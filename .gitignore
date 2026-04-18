@@ -1,0 +1,135 @@
+# Mortgage Intake Funnel - Git Ignore Configuration
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE & Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+.atom/
+.project
+.classpath
+*.c9/
+*.iml
+
+# OS-specific temp files
+*.tmp
+*.temp
+*.log
+
+# Environment Configuration
+.env
+.env.local
+.env.*.local
+
+# Node.js (if future backend added)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Python (if future backend added)
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.python-version
+
+# Build & Distribution
+dist/
+build/
+*.egg-info/
+
+# Testing
+coverage/
+.coverage
+htmlcov/
+
+# Local development
+*.local
+local-*.html
+test-*.html
+
+# Sensitive data (do not commit credentials)
+secrets.json
+credentials.json
+auth-token.txt
+
+# Temporary test files
+test-submissions.json
+debug-*.log
+
+# Backup files
+*.bak
+*.backup
+*-old.*
+
+# OS-specific
+._*
+.AppleDouble
+.LSOverride
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Production builds (if added)
+/build
+/dist
+
+# IDE specific files
+.vscode/settings.json
+.idea/workspace.xml
+.idea/dictionaries
+
+# Compiled files
+*.class
+*.jar
+*.exe
+
+# Archive files
+*.zip
+*.tar.gz
+*.rar
+
+# Generated documentation
+docs/generated/
+docs/api/
+
+# Asset optimization outputs (if implemented)
+images-optimized/
+scss-compiled/
+
+# Version control merging artifacts
+*.orig
+*.BACKUP.*
+*.BASE.*
+*.REMOTE.*
+*.LOCAL.*
+
+# System-specific
+.~lock*
+
+# Do NOT ignore these essential files
+!README.md
+!LICENSE
+!.gitkeep
+!/assets/
+!/docs/
+
